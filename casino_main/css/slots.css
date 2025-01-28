@@ -1,0 +1,75 @@
+main{
+    height: 80vh;
+}
+#slots-game-section{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 140px;
+}
+
+.slots-container{
+    display: flex;
+    background-color: #213743;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.slots{
+    width: calc(600px);
+    height: 450px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #0D1A24;
+    border-top-right-radius: 20px;
+}
+
+img{
+    max-height: 150px;
+    max-width: 250px;
+}
+
+@keyframes scrollUp{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-5000px);
+    }
+}
+
+.slot{
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-slot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slot:nth-child(1){
+    border-right: 2px solid #213743;
+}
+.slot:nth-child(3){
+    border-left: 2px solid #213743;
+}
+.slot:nth-child(1).animate{
+    animation: scrollUp 2.2s linear;
+}
+
+.slot:nth-child(2).animate{
+    animation: scrollUp 2.6s linear;
+}
+
+.slot:nth-child(3).animate{
+    animation: scrollUp 3s linear;
+}
+.winning {
+    background-color: #112330;
+}
+

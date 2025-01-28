@@ -1,0 +1,133 @@
+
+#user-panel{
+    width: 70%;
+    margin: 50px 0;
+
+}
+.user-panel-container span{
+    color: var(--color-yellow);
+    font-weight: bold;
+    font-size: 25px;
+}
+.user-panel-container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: #252a31;
+    padding: 40px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 2px 0 rgba(0, 0, 0, .12);
+    border-radius: 20px;
+}
+.user-panel-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.user-inf{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.user-panel-p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.current-measures{
+    height: 50px;
+    width: fit-content;
+    text-align: end;
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.password-change{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.password-change form, .nickname-change form, .deposit-money form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.nickname-change form, .deposit-money form{
+    margin-top: 15px;
+}
+.user-panel-container input{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    background-color: var(--color-grey);
+    padding: 10px;
+    padding-left: 40px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s outline-color;
+    outline: 1px solid transparent;
+    border: none;
+}
+.user-panel-container button{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-yellow);
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+.user-panel-container button:hover{
+    background-color: var(--color-yellow-hover);
+}
+.user-panel-container input:hover, 
+.user-panel-container input:active, 
+.user-panel-container input:focus{
+    outline-color: var(--color-yellow);
+}
+.user-panel-container label{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.user-panel-container label i{
+    position: absolute;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #5f6a7a;
+}
+.nickname-change{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.deposit-money{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.statistics{
+    background-color: #2c323a;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+@media (max-width: 983px){
+    .current-measures{
+        text-align: left;
+    }
+}
+@media (max-width: 650px){
+    #panel-main{
+        padding: 0 0;
+    }
+}

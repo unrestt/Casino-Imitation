@@ -1,0 +1,161 @@
+  .games-intro {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .games-intro h1 {
+    font-size: 3rem;
+    color: #f6e05e;
+    margin-bottom: 10px;
+  }
+  
+  .games-intro p {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    margin-bottom: 40px;
+  }
+  
+  .games-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .game-card {
+    width: 500px;
+    background: var(--color-grey);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .game-card-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .game-card-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    z-index: 1;
+    transform: scale(1);
+  }
+  
+  .game-card:hover .game-card-image img {
+    transform: scale(1.1);
+    z-index: 0;
+  }
+  
+  .game-card-content {
+    height: calc(100% - 300px);
+    padding: 30px;
+    text-align: left;
+    flex-direction: column;
+    z-index: 2;
+    display: flex;
+    position: relative;
+  }
+  
+  .game-card-content h2 {
+    font-size: 1.8rem;
+    color: var(--color-yellow);
+  }
+  .game-card-content h4{
+    color: #cfcdcd;
+    margin-bottom: 15px;
+  }
+  
+  .game-description {
+    font-size: 1rem;
+    color: #a0aec0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .cta-play-now {
+    display: flex;
+    width: fit-content;
+    margin-top: auto;
+    padding: 12px 30px;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+
+  }
+  
+  .cta-play-now:hover {
+    background: var(--color-yellow-hover);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .game-card {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .games-intro h1 {
+      font-size: 2.5rem;
+    }
+  
+    .games-intro p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    .game-card-content {
+      padding: 20px;
+    }
+  
+    .game-card-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .game-description {
+      font-size: 0.9rem;
+    }
+  
+    .cta-play-now {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .game-card {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .game-card-content {
+      padding: 20px;
+    }
+  
+    .game-card-content h2 {
+      font-size: 1.3rem;
+    }
+  
+    .game-description {
+      font-size: 0.8rem;
+    }
+  
+    .cta-play-now {
+      padding: 8px 15px;
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,34 @@
+#logos-section{
+    margin-top: 50px;
+    user-select: none;
+}
+
+.logos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo img {
+    display: block;
+    max-width: 80px;
+    height: auto;
+}
+.logo.suppliers img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+}
+
+

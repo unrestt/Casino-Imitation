@@ -1,0 +1,33 @@
+footer{
+    background-color: var(--color-darker-black);
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0 !important;
+}
+footer i{
+    font-size: 50px;
+
+}
+.footer-social, .footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: #fff;
+}
+.footer-social{
+    padding: 20px 20px 0 20px;
+}
+.footer-social i{
+    transition: 0.3s color;
+}
+.footer-social i:hover{
+    color: var(--color-yellow-hover);
+}
+.footer-text{
+    padding: 25px;
+    text-align: center;
+}

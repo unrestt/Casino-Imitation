@@ -1,0 +1,123 @@
+#plinko-game-section{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 100px;
+}
+
+.plinko-container{
+    display: flex;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: #213743;
+}
+
+#game-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+}
+#slots {
+    position: absolute;
+    top: 650px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+#score p{
+    background-color: #006d00 !important;
+    color: white;
+}
+
+.slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 26px !important;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+    border-radius: 5px;
+}
+.slot-0, .slot-10{
+    background-color: rgb(255, 0, 0) !important;
+    box-shadow: 
+        0px 2px 0px rgb(158, 0, 0),
+        0px 4px 0px rgb(158, 0, 0),
+        0px 6px 0px rgb(158, 0, 0);
+}
+.slot-1, .slot-9{
+    background-color: rgb(255, 46, 0) !important;
+    box-shadow: 
+        0px 2px 0px rgb(150, 28, 0),
+        0px 4px 0px rgb(150, 28, 0),
+        0px 6px 0px rgb(150, 28, 0);
+}
+.slot-2, .slot-8{
+    background-color: rgb(255, 93, 0) !important;
+    box-shadow: 
+        0px 2px 0px rgb(133, 64, 0),
+        0px 4px 0px rgb(133, 64, 0),
+        0px 6px 0px rgb(133, 64, 0);
+}
+.slot-3, .slot-7{
+    background-color: rgb(255, 139, 0) !important;
+    box-shadow: 
+        0px 2px 0px rgb(153, 84, 0),
+        0px 4px 0px rgb(153, 84, 0),
+        0px 6px 0px rgb(153, 84, 0);
+}
+.slot-4, .slot-6{
+    background-color: rgb(255, 185, 0) !important;
+    box-shadow: 
+        0px 2px 0px rgb(160, 117, 0),
+        0px 4px 0px rgb(160, 117, 0),
+        0px 6px 0px rgb(160, 117, 0);
+}
+.slot-5{
+    background-color: rgb(255, 232, 0) !important;
+    box-shadow: 
+        0px 2px 0px rgb(153, 140, 0),
+        0px 4px 0px rgb(153, 140, 0),
+        0px 6px 0px rgb(153, 140, 0);
+}
+
+.slot-hit {
+    transform: translateY(10px);
+    background-color: #00ff00;
+}
+
+
+
+.multiplier-text {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+}
+@keyframes flash {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.flash {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #7c7c7c;
+    animation: flash 0.3s ease-out;
+    pointer-events: none;
+}
